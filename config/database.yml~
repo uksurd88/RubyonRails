@@ -1,0 +1,32 @@
+# Blank db included with Tracks
+# You can change it to db/tracks-17-example.db if
+# you want some sample data to play with.
+#
+# This is the format you need for MySQL
+# production:
+#   adapter: mysql
+#   database: tracks
+#   host: localhost
+#   username: root
+#   password: my_mysql_password
+
+development:
+  adapter: mysql
+  database: tracks
+  host: localhost
+  username: root
+  password: bugvan4420
+
+test:
+  adapter: mysql
+  database: tracks_test
+  host: localhost
+  username: root
+  password: bugvan4420
+
+production:
+  adapter: mysql
+  database: tracks_production
+  host: localhost
+  username: root
+  password: bugvan4420
