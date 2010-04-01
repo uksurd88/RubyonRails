@@ -4,6 +4,7 @@
     suppress_drag_handle ||= false
     suppress_edit_button ||= false
 %>
+<%= dom_id(co,"contain") %>
 <div id="<%= dom_id(context, "container") %>" class="list">
   <div id="<%= dom_id(context) %>" class="context sortable_row" style="display:'';">
     <% unless suppress_drag_handle -%>

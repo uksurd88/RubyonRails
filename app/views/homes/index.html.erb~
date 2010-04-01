@@ -1,0 +1,38 @@
+<h1>Listing homes</h1>
+
+<table>
+  <tr>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Address</th>
+    <th>Areacode</th>
+    <th>Phone</th>
+    <th>Numberofwindows</th>
+    <th>Window specifics</th>
+    <th>Windows description</th>
+    <th>Points avai</th>
+    <th>No preference</th>
+  </tr>
+
+<% for home in @homes %>
+  <tr>
+    <td><%=h home.first_name %></td>
+    <td><%=h home.last_name %></td>
+    <td><%=h home.address %></td>
+    <td><%=h home.areacode %></td>
+    <td><%=h home.phone %></td>
+    <td><%=h home.numberofWindows %></td>
+    <td><%=h home.window_specifics %></td>
+    <td><%=h home.windows_description %></td>
+    <td><%=h home.points_avai %></td>
+    <td><%=h home.no_preference %></td>
+    <td><%= link_to 'Show', homes %></td>
+    <td><%= link_to 'Edit', edit_home_path(home) %></td>
+    <td><%= link_to 'Destroy', home, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New home', new_home_path %>

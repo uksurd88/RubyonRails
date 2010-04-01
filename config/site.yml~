@@ -6,14 +6,14 @@ salt: "sukhdeep"
 # Uncomment ldap or open_id if you want to use those authentication schemes.
 # If you choose ldap, see the additional configuration options further down.
 authentication_schemes:
-  - "database"
-  # - "ldap"
+#  - "database"
+   - "ldap"
   # - "open_id"
 
 
 # You''ll probably want to change this to the time zone of the computer where Tracks is running
 # run rake time:zones:local have Rails suggest time zone names on your system
-time_zone: "UTC"
+time_zone: "London"
 
 
 # setting this to true will make the cookies only available over HTTPS
@@ -27,9 +27,9 @@ secure_cookies: false
 
 
 # Only needed if ldap is included in authentication_schemes
-# ldap:
-#   library: 'net/ldap'
-#   servers:
-#     - 'localhost'
-#   use_ssl: false
-#   login_format: 'cn=%s,dc=example,dc=com'
+ldap:
+   library: 'net/ldap'
+   servers:
+     - 'localhost'
+   use_ssl: false
+   login_format: 'cn=%s,dc=example,dc=com'

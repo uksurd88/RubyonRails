@@ -19,14 +19,14 @@ development:
 
 test:
   adapter: mysql
-  database: tracks_test
+  database: tracks
   host: localhost
   username: root
   password: bugvan4420
 
 production:
   adapter: mysql
-  database: tracks_production
+  database: tracks
   host: localhost
   username: root
   password: bugvan4420
